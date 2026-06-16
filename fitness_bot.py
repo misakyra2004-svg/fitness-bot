@@ -9,8 +9,8 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 # ==============================
 # ВСТАВЬ СЮДА СВОИ КЛЮЧИ
 # ==============================
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 # ==============================
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
