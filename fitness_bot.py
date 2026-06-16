@@ -8,7 +8,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 # ==============================
 # ВСТАВЬ СЮДА СВОИ КЛЮЧИ
 # ==============================
-TELEGRAM_TOKEN = "ВСТАВЬ_ТОКЕН_ОТ_BOTFATHER"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 GROQ_API_KEY = "ВСТАВЬ_СВОЙ_GROQ_КЛЮЧ"
 # ==============================
 
