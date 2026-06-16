@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import json
 import logging
@@ -9,7 +10,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 # ВСТАВЬ СЮДА СВОИ КЛЮЧИ
 # ==============================
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-GROQ_API_KEY = "ВСТАВЬ_СВОЙ_GROQ_КЛЮЧ"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # ==============================
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
